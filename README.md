@@ -1,1 +1,1 @@
-# bash-perf3-gnuplot
+# bash-iperf3-gnuplot
