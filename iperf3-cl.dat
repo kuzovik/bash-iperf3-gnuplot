@@ -1,0 +1,13 @@
+#Server_Name                   Code    Baud     Version        Proto       Ports
+ bouygues.testdebit.info       FR      10Gb     IPv4,IPv6      TCP         5200-5209
+ ping.online.net               FR      10Gb     IPv4           TCP,UDP     5200-5209
+ ping6.online.net              FR      10Gb     IPv6           TCP,UDP     5200-5209
+ ikoula.testdebit.info         FR      1Gb      IPv4,IPv6      TCP         5200-5209
+ debit.k-net.fr                SW      1Gb      IPv4,IPv6      TCP,UDP     5201
+ speedtest.serverius.net       NL      10Gb     IPv4,IPv6      TCP,UDP     5002
+ iperf.eenet.ee                ES      XX       IPv4           TCP,UDP     5201
+=iperf.volia.net               UA      XX       IPv4           TCP,UDP     5201
+ iperf.it-north.net            KZ      1Gb      IPv4           TCP,UDP     5200-5209
+ iperf.biznetnetworks.com      ID      1Gb      IPv4,IPv6      TCP,UDP     5201-5203
+ iperf.scottlinux.com          US      1Gb      IPv4,IPv6      TCP,UDP     5201
+ iperf.he.net                  US      XX       IPv4,IPv6      TCP,UDP     5201

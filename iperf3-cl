@@ -1,0 +1,12 @@
+#!/bin/bash
+
+wait(){ echo -n "Press ENTER to continue..."; read k; }
+
+while [ 1 -eq 1 ]
+do
+
+CMD="${0}.sh"; echo "CMD=[$CMD]"; ${CMD}
+
+wait
+
+done
