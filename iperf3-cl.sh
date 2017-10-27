@@ -10,7 +10,7 @@ METER="m"                   # m=Mbit/sec
 
 if [ "${REVER}" == "1" ] ; then FREAD="RX"; REVER="-R"; else FREAD="TX"; REVER=""; fi
 FDATA="`echo ${0}|sed s/'\.sh'/'\.dat'/g`"
-DDIR="/var/tmp/iperf3_tests"
+DDIR="/tmp/iperf3_tests"
 
 wait(){
     echo -n "Press ENTER for continue..."; read k
@@ -164,7 +164,7 @@ done
 FSZ=`stat -c%s "${LFILE}.txt"`
 if [ $FSZ -lt 100 ] ; then echo "ERROR: log-file size [${FSZ}]."; psKL ${RHOST} ${RPORT} 1>/dev/null 2>/dev/null; exit; fi
 
-ERRR=`cat ${LFILE}.txt|grep -i error|wc -l`
+ERRR=`cat ${LFILE}.txt|grep -i error|grep -v socket|wc -l`
 if [ $ERRR -gt 0 ] ; then psKL "${RHOST}" "${RPORT}" 1>/dev/null 2>/dev/null; exit; fi
 
 for((a=1; a<=${PARAL}; a++)){ APAR[$a]=0; AVAL[$a]=0; }
